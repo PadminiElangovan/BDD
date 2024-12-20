@@ -1,0 +1,354 @@
+<html>
+<head>
+<title>TestNG:  Default test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Default test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>27/7/0</td>
+</tr><tr>
+<td>Started on:</td><td>Thu Dec 19 18:24:19 CST 2024</td>
+</tr>
+<tr><td>Total time:</td><td>79 seconds (79795 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='testRunner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: testRunner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verifying Registration Functionality with different inputs", "Registration Functionality"</td>
+<td><div><pre>java.lang.AssertionError: expected [password_mismatch:The two password fields didn’t match.] but found [Invalid Username ]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:656)
+	at org.testng.Assert.assertEquals(Assert.java:666)
+	at stepDefinitions.Register_Step.the_an_invalid_username_should_be_displayed(Register_Step.java:170)
+	at ✽.the an Invalid username should be displayed(file:///C:/Users/madhu/OneDrive/Desktop/SDET/AS_BDD/src/test/resources/Feature%20files/Register.feature:8)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1335908946", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1335908946'><pre>java.lang.AssertionError: expected [password_mismatch:The two password fields didn’t match.] but found [Invalid Username ]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:656)
+	at org.testng.Assert.assertEquals(Assert.java:666)
+	at stepDefinitions.Register_Step.the_an_invalid_username_should_be_displayed(Register_Step.java:170)
+	at ✽.the an Invalid username should be displayed(file:///C:/Users/madhu/OneDrive/Desktop/SDET/AS_BDD/src/test/resources/Feature%20files/Register.feature:8)
+</pre></div></td>
+<td>11</td>
+<td>testRunner.TestRunner@7530ad9c</td></tr>
+<tr>
+<td title='testRunner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: testRunner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verifying Registration Functionality with different inputs", "Registration Functionality"</td>
+<td><div><pre>java.lang.AssertionError: expected [password_mismatch:The two password fields didn’t match.] but found [The user Is already Registered]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:656)
+	at org.testng.Assert.assertEquals(Assert.java:666)
+	at stepDefinitions.Register_Step.the_an_the_user_is_already_registered_should_be_displayed(Register_Step.java:131)
+	at ✽.the an The User is already Registered should be displayed(file:///C:/Users/madhu/OneDrive/Desktop/SDET/AS_BDD/src/test/resources/Feature%20files/Register.feature:8)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1664468374", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1664468374'><pre>java.lang.AssertionError: expected [password_mismatch:The two password fields didn’t match.] but found [The user Is already Registered]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:656)
+	at org.testng.Assert.assertEquals(Assert.java:666)
+	at stepDefinitions.Register_Step.the_an_the_user_is_already_registered_should_be_displayed(Register_Step.java:131)
+	at ✽.the an The User is already Registered should be displayed(file:///C:/Users/madhu/OneDrive/Desktop/SDET/AS_BDD/src/test/resources/Feature%20files/Register.feature:8)
+</pre></div></td>
+<td>11</td>
+<td>testRunner.TestRunner@7530ad9c</td></tr>
+<tr>
+<td title='testRunner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: testRunner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify navigation to  DataStructures pages after selecting options from dropdown menu in Home page", "Home Functionality"</td>
+<td><div><pre>java.lang.RuntimeException: Error initializing Excel data: The supplied file was empty (zero bytes long)
+	at appHook.Hooks.setUp(Hooks.java:35)
+</pre></div><a href='#' onClick='toggleBox("stack-trace445756468", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace445756468'><pre>java.lang.RuntimeException: Error initializing Excel data: The supplied file was empty (zero bytes long)
+	at appHook.Hooks.setUp(Hooks.java:35)
+</pre></div></td>
+<td>22</td>
+<td>testRunner.TestRunner@7530ad9c</td></tr>
+<tr>
+<td title='testRunner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: testRunner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "signout from DataStructure page", "DataStructure Module"</td>
+<td><div><pre>java.lang.RuntimeException: Error initializing Excel data: Unexpected end of ZLIB input stream
+	at appHook.Hooks.setUp(Hooks.java:35)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1552605517", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1552605517'><pre>java.lang.RuntimeException: Error initializing Excel data: Unexpected end of ZLIB input stream
+	at appHook.Hooks.setUp(Hooks.java:35)
+</pre></div></td>
+<td>23</td>
+<td>testRunner.TestRunner@7530ad9c</td></tr>
+<tr>
+<td title='testRunner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: testRunner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Implementation of DataStructure TryEditor Functionality", "DataStructure Module"</td>
+<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for alert to be present (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.27.0&apos;, revision: &apos;d6e718d134&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.5&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 133.0.3, moz:accessibilityChecks: false, moz:buildID: 20241209150345, moz:debuggerAddress: 127.0.0.1:19081, moz:geckodriverVersion: 0.35.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 33596, moz:profile: C:\Users\madhu\AppData\Loca..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://127.0.0.1:19081/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
+Session ID: b83a06f5-ba03-4b37-bf3b-6551074db078
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at pages.Tree_Page.IsAlertPresent(Tree_Page.java:98)
+	at stepDefinitions.Tree_Step.the_error_message_in_alert_window_should_be_displayed(Tree_Step.java:89)
+	at ✽.The Error message in alert window should be displayed(file:///C:/Users/madhu/OneDrive/Desktop/SDET/AS_BDD/src/test/resources/Feature%20files/Datastructure.feature:23)
+</pre></div><a href='#' onClick='toggleBox("stack-trace890049318", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace890049318'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for alert to be present (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.27.0&apos;, revision: &apos;d6e718d134&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.5&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 133.0.3, moz:accessibilityChecks: false, moz:buildID: 20241209150345, moz:debuggerAddress: 127.0.0.1:19081, moz:geckodriverVersion: 0.35.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 33596, moz:profile: C:\Users\madhu\AppData\Loca..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://127.0.0.1:19081/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
+Session ID: b83a06f5-ba03-4b37-bf3b-6551074db078
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at pages.Tree_Page.IsAlertPresent(Tree_Page.java:98)
+	at stepDefinitions.Tree_Step.the_error_message_in_alert_window_should_be_displayed(Tree_Step.java:89)
+	at ✽.The Error message in alert window should be displayed(file:///C:/Users/madhu/OneDrive/Desktop/SDET/AS_BDD/src/test/resources/Feature%20files/Datastructure.feature:23)
+</pre></div></td>
+<td>40</td>
+<td>testRunner.TestRunner@7530ad9c</td></tr>
+<tr>
+<td title='testRunner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: testRunner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verifying Registration Functionality with different inputs", "Registration Functionality"</td>
+<td><div><pre>java.lang.RuntimeException: Error initializing Excel data: Unexpected end of ZLIB input stream
+	at appHook.Hooks.setUp(Hooks.java:35)
+</pre></div><a href='#' onClick='toggleBox("stack-trace82684561", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace82684561'><pre>java.lang.RuntimeException: Error initializing Excel data: Unexpected end of ZLIB input stream
+	at appHook.Hooks.setUp(Hooks.java:35)
+</pre></div></td>
+<td>11</td>
+<td>testRunner.TestRunner@7530ad9c</td></tr>
+<tr>
+<td title='testRunner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: testRunner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verifying Registration Functionality with different inputs", "Registration Functionality"</td>
+<td><div><pre>java.lang.AssertionError: expected [password_mismatch:The two password fields didn’t match.] but found [Invalid Password]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:656)
+	at org.testng.Assert.assertEquals(Assert.java:666)
+	at stepDefinitions.Register_Step.the_an_enter_the_valid_password_should_be_displayed(Register_Step.java:91)
+	at ✽.the an Enter the valid password should be displayed(file:///C:/Users/madhu/OneDrive/Desktop/SDET/AS_BDD/src/test/resources/Feature%20files/Register.feature:8)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1394609917", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1394609917'><pre>java.lang.AssertionError: expected [password_mismatch:The two password fields didn’t match.] but found [Invalid Password]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:656)
+	at org.testng.Assert.assertEquals(Assert.java:666)
+	at stepDefinitions.Register_Step.the_an_enter_the_valid_password_should_be_displayed(Register_Step.java:91)
+	at ✽.the an Enter the valid password should be displayed(file:///C:/Users/madhu/OneDrive/Desktop/SDET/AS_BDD/src/test/resources/Feature%20files/Register.feature:8)
+</pre></div></td>
+<td>14</td>
+<td>testRunner.TestRunner@7530ad9c</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='testRunner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: testRunner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Implementation of DataStructure TryEditor Functionality", "DataStructure Module"</td>
+<td></td>
+<td>26</td>
+<td>testRunner.TestRunner@7530ad9c</td></tr>
+<tr>
+<td title='testRunner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: testRunner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Display error for empty username and password", "Login Functionality"</td>
+<td></td>
+<td>20</td>
+<td>testRunner.TestRunner@7530ad9c</td></tr>
+<tr>
+<td title='testRunner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: testRunner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Implementation of DataStructure TryEditor Functionality", "DataStructure Module"</td>
+<td></td>
+<td>28</td>
+<td>testRunner.TestRunner@7530ad9c</td></tr>
+<tr>
+<td title='testRunner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: testRunner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Display error for invalid credentials", "Login Functionality"</td>
+<td></td>
+<td>22</td>
+<td>testRunner.TestRunner@7530ad9c</td></tr>
+<tr>
+<td title='testRunner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: testRunner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Navigate to the LOGIN Page", "Login Functionality"</td>
+<td></td>
+<td>16</td>
+<td>testRunner.TestRunner@7530ad9c</td></tr>
+<tr>
+<td title='testRunner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: testRunner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify navigation to Datastructure pages after clicking its corresponding GetStarted button", "Home Functionality"</td>
+<td></td>
+<td>20</td>
+<td>testRunner.TestRunner@7530ad9c</td></tr>
+<tr>
+<td title='testRunner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: testRunner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify navigation to Datastructure pages after clicking its corresponding GetStarted button", "Home Functionality"</td>
+<td></td>
+<td>22</td>
+<td>testRunner.TestRunner@7530ad9c</td></tr>
+<tr>
+<td title='testRunner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: testRunner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verifying Registration Functionality with different inputs", "Registration Functionality"</td>
+<td></td>
+<td>15</td>
+<td>testRunner.TestRunner@7530ad9c</td></tr>
+<tr>
+<td title='testRunner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: testRunner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify that user navigates to the login page when login link is clicked in Registration page", "Registration Functionality"</td>
+<td></td>
+<td>11</td>
+<td>testRunner.TestRunner@7530ad9c</td></tr>
+<tr>
+<td title='testRunner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: testRunner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify navigation to  DataStructures pages after selecting options from dropdown menu in Home page", "Home Functionality"</td>
+<td></td>
+<td>21</td>
+<td>testRunner.TestRunner@7530ad9c</td></tr>
+<tr>
+<td title='testRunner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: testRunner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Navigated to Practice Questions page in DataStructure in timeComplixity page", "DataStructure Module"</td>
+<td></td>
+<td>25</td>
+<td>testRunner.TestRunner@7530ad9c</td></tr>
+<tr>
+<td title='testRunner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: testRunner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Navigate to implementation of DataStructure in timeComplixity page", "DataStructure Module"</td>
+<td></td>
+<td>24</td>
+<td>testRunner.TestRunner@7530ad9c</td></tr>
+<tr>
+<td title='testRunner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: testRunner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify navigation to  DataStructures pages after selecting options from dropdown menu in Home page", "Home Functionality"</td>
+<td></td>
+<td>17</td>
+<td>testRunner.TestRunner@7530ad9c</td></tr>
+<tr>
+<td title='testRunner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: testRunner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify navigation to  DataStructures pages after selecting options from dropdown menu in Home page", "Home Functionality"</td>
+<td></td>
+<td>20</td>
+<td>testRunner.TestRunner@7530ad9c</td></tr>
+<tr>
+<td title='testRunner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: testRunner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Successful login with valid credentials", "Login Functionality"</td>
+<td></td>
+<td>17</td>
+<td>testRunner.TestRunner@7530ad9c</td></tr>
+<tr>
+<td title='testRunner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: testRunner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify navigation to Datastructure pages after clicking its corresponding GetStarted button", "Home Functionality"</td>
+<td></td>
+<td>19</td>
+<td>testRunner.TestRunner@7530ad9c</td></tr>
+<tr>
+<td title='testRunner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: testRunner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify navigation to Datastructure pages after clicking its corresponding GetStarted button", "Home Functionality"</td>
+<td></td>
+<td>19</td>
+<td>testRunner.TestRunner@7530ad9c</td></tr>
+<tr>
+<td title='testRunner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: testRunner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify navigation to Datastructure pages after clicking its corresponding GetStarted button", "Home Functionality"</td>
+<td></td>
+<td>22</td>
+<td>testRunner.TestRunner@7530ad9c</td></tr>
+<tr>
+<td title='testRunner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: testRunner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify navigation to  DataStructures pages after selecting options from dropdown menu in Home page", "Home Functionality"</td>
+<td></td>
+<td>24</td>
+<td>testRunner.TestRunner@7530ad9c</td></tr>
+<tr>
+<td title='testRunner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: testRunner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Display error for empty username field", "Login Functionality"</td>
+<td></td>
+<td>17</td>
+<td>testRunner.TestRunner@7530ad9c</td></tr>
+<tr>
+<td title='testRunner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: testRunner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify navigation to  DataStructures pages after selecting options from dropdown menu in Home page", "Home Functionality"</td>
+<td></td>
+<td>22</td>
+<td>testRunner.TestRunner@7530ad9c</td></tr>
+<tr>
+<td title='testRunner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: testRunner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Display error for empty password field", "Login Functionality"</td>
+<td></td>
+<td>18</td>
+<td>testRunner.TestRunner@7530ad9c</td></tr>
+<tr>
+<td title='testRunner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: testRunner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify navigation to Datastructure pages after clicking its corresponding GetStarted button", "Home Functionality"</td>
+<td></td>
+<td>17</td>
+<td>testRunner.TestRunner@7530ad9c</td></tr>
+<tr>
+<td title='testRunner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: testRunner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Navigate to tryeditor window DataStructure in timeComplixity page", "DataStructure Module"</td>
+<td></td>
+<td>27</td>
+<td>testRunner.TestRunner@7530ad9c</td></tr>
+<tr>
+<td title='testRunner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: testRunner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Implementation of DataStructure TryEditor Functionality", "DataStructure Module"</td>
+<td></td>
+<td>26</td>
+<td>testRunner.TestRunner@7530ad9c</td></tr>
+<tr>
+<td title='testRunner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: testRunner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verifying Registration Functionality with different inputs", "Registration Functionality"</td>
+<td></td>
+<td>18</td>
+<td>testRunner.TestRunner@7530ad9c</td></tr>
+<tr>
+<td title='testRunner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: testRunner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verifying Registration Functionality with different inputs", "Registration Functionality"</td>
+<td></td>
+<td>16</td>
+<td>testRunner.TestRunner@7530ad9c</td></tr>
+</table><p>
+</body>
+</html>
